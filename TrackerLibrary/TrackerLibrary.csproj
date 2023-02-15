@@ -41,7 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\MatchupEntryModel.cs" />
+    <Compile Include="Model\MatchupModel.cs" />
+    <Compile Include="Model\PersonModel.cs" />
+    <Compile Include="Model\PrizeModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Model\TeamModel.cs" />
+    <Compile Include="Model\TournamentModel.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
