@@ -35,6 +35,7 @@
             this.ddSelectTeamMembers = new System.Windows.Forms.ComboBox();
             this.btnAddMember = new System.Windows.Forms.Button();
             this.gbAddNewMember = new System.Windows.Forms.GroupBox();
+            this.btnCreateMember = new System.Windows.Forms.Button();
             this.tbPhoneNumber = new System.Windows.Forms.TextBox();
             this.lblPhoneNumber = new System.Windows.Forms.Label();
             this.tbEmail = new System.Windows.Forms.TextBox();
@@ -43,9 +44,9 @@
             this.lblLastName = new System.Windows.Forms.Label();
             this.tbFirstName = new System.Windows.Forms.TextBox();
             this.lblFirstName = new System.Windows.Forms.Label();
-            this.btnCreateMember = new System.Windows.Forms.Button();
             this.lbTournamentPlayers = new System.Windows.Forms.ListBox();
             this.btnCreateTeam = new System.Windows.Forms.Button();
+            this.btnDeleteSelectedMember = new System.Windows.Forms.Button();
             this.gbAddNewMember.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,7 +68,7 @@
             this.tbTournamentName.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.tbTournamentName.Location = new System.Drawing.Point(30, 113);
             this.tbTournamentName.Name = "tbTournamentName";
-            this.tbTournamentName.Size = new System.Drawing.Size(368, 35);
+            this.tbTournamentName.Size = new System.Drawing.Size(383, 35);
             this.tbTournamentName.TabIndex = 12;
             // 
             // lblTeamName
@@ -99,12 +100,12 @@
             this.ddSelectTeamMembers.FormattingEnabled = true;
             this.ddSelectTeamMembers.Location = new System.Drawing.Point(31, 214);
             this.ddSelectTeamMembers.Name = "ddSelectTeamMembers";
-            this.ddSelectTeamMembers.Size = new System.Drawing.Size(367, 38);
+            this.ddSelectTeamMembers.Size = new System.Drawing.Size(382, 38);
             this.ddSelectTeamMembers.TabIndex = 14;
             // 
             // btnAddMember
             // 
-            this.btnAddMember.Location = new System.Drawing.Point(134, 273);
+            this.btnAddMember.Location = new System.Drawing.Point(142, 273);
             this.btnAddMember.Name = "btnAddMember";
             this.btnAddMember.Size = new System.Drawing.Size(161, 40);
             this.btnAddMember.TabIndex = 15;
@@ -128,6 +129,15 @@
             this.gbAddNewMember.TabIndex = 16;
             this.gbAddNewMember.TabStop = false;
             this.gbAddNewMember.Text = "Add New Member";
+            // 
+            // btnCreateMember
+            // 
+            this.btnCreateMember.Location = new System.Drawing.Point(76, 244);
+            this.btnCreateMember.Name = "btnCreateMember";
+            this.btnCreateMember.Size = new System.Drawing.Size(214, 40);
+            this.btnCreateMember.TabIndex = 17;
+            this.btnCreateMember.Text = "Create Member";
+            this.btnCreateMember.UseVisualStyleBackColor = true;
             // 
             // tbPhoneNumber
             // 
@@ -213,22 +223,13 @@
             this.lblFirstName.Text = "First Name";
             this.lblFirstName.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // btnCreateMember
-            // 
-            this.btnCreateMember.Location = new System.Drawing.Point(76, 244);
-            this.btnCreateMember.Name = "btnCreateMember";
-            this.btnCreateMember.Size = new System.Drawing.Size(214, 40);
-            this.btnCreateMember.TabIndex = 17;
-            this.btnCreateMember.Text = "Create Member";
-            this.btnCreateMember.UseVisualStyleBackColor = true;
-            // 
             // lbTournamentPlayers
             // 
             this.lbTournamentPlayers.FormattingEnabled = true;
             this.lbTournamentPlayers.ItemHeight = 30;
-            this.lbTournamentPlayers.Location = new System.Drawing.Point(440, 113);
+            this.lbTournamentPlayers.Location = new System.Drawing.Point(438, 113);
             this.lbTournamentPlayers.Name = "lbTournamentPlayers";
-            this.lbTournamentPlayers.Size = new System.Drawing.Size(368, 544);
+            this.lbTournamentPlayers.Size = new System.Drawing.Size(383, 484);
             this.lbTournamentPlayers.TabIndex = 17;
             // 
             // btnCreateTeam
@@ -240,12 +241,22 @@
             this.btnCreateTeam.Text = "Create Team";
             this.btnCreateTeam.UseVisualStyleBackColor = true;
             // 
+            // btnDeleteSelectedMember
+            // 
+            this.btnDeleteSelectedMember.Location = new System.Drawing.Point(501, 617);
+            this.btnDeleteSelectedMember.Name = "btnDeleteSelectedMember";
+            this.btnDeleteSelectedMember.Size = new System.Drawing.Size(256, 40);
+            this.btnDeleteSelectedMember.TabIndex = 24;
+            this.btnDeleteSelectedMember.Text = "Delete Selected";
+            this.btnDeleteSelectedMember.UseVisualStyleBackColor = true;
+            // 
             // CreateTeamForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkCyan;
             this.ClientSize = new System.Drawing.Size(851, 735);
+            this.Controls.Add(this.btnDeleteSelectedMember);
             this.Controls.Add(this.btnCreateTeam);
             this.Controls.Add(this.lbTournamentPlayers);
             this.Controls.Add(this.gbAddNewMember);
@@ -286,5 +297,6 @@
         private System.Windows.Forms.Button btnCreateMember;
         private System.Windows.Forms.ListBox lbTournamentPlayers;
         private System.Windows.Forms.Button btnCreateTeam;
+        private System.Windows.Forms.Button btnDeleteSelectedMember;
     }
 }
