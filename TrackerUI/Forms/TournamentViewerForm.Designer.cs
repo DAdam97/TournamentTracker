@@ -48,7 +48,7 @@
             // 
             this.lblHeader.AutoSize = true;
             this.lblHeader.ForeColor = System.Drawing.Color.Black;
-            this.lblHeader.Location = new System.Drawing.Point(24, 25);
+            this.lblHeader.Location = new System.Drawing.Point(25, 25);
             this.lblHeader.Name = "lblHeader";
             this.lblHeader.Size = new System.Drawing.Size(129, 30);
             this.lblHeader.TabIndex = 0;
