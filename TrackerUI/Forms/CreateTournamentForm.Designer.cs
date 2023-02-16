@@ -219,7 +219,7 @@
             // btnCreateTournament
             // 
             this.btnCreateTournament.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnCreateTournament.Location = new System.Drawing.Point(332, 585);
+            this.btnCreateTournament.Location = new System.Drawing.Point(332, 588);
             this.btnCreateTournament.Name = "btnCreateTournament";
             this.btnCreateTournament.Size = new System.Drawing.Size(268, 43);
             this.btnCreateTournament.TabIndex = 24;
